@@ -4,6 +4,7 @@ import LoginCliente from "./src/login/LoginCliente";
 import LoginAdm from "./src/login/LoginAdm";
 import LoginProfissional from "./src/login/LoginProfissional";
 import CadastroCliente from "./src/login/CadastroCliente";
+import CadastroServico from "./src/login/CadastroServico";
 function App(): JSX.Element {
 
   return(
@@ -11,9 +12,12 @@ function App(): JSX.Element {
 
    //<LoginProfissional/>
 
-      <LoginAdm/>
+      //<LoginAdm/>
 
    //<CadastroCliente/>
+
+   <CadastroServico/>
+
   );
 
 }
