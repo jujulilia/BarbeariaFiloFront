@@ -18,7 +18,7 @@ function LoginCliente(): JSX.Element {
         <View style={styles.container}>
             <Image style={styles.logo}
              resizeMode="contain"
-            source={require('../assets/images/cliente.png')}/>
+            source={require('../assets/images/capivara.png')}/>
         
         <View style={styles.card}>
             <Text style={styles.title}>Login Cliente</Text>

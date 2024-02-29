@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import{Image, StyleSheet, Text, TextInput, Touchable, TouchableOpacity, View} from "react-native";
-function LoginAdm(): JSX.Element {
+function CadastroCliente(): JSX.Element {
 
     const[email, setEmail] = useState("");
     const[password, setPassword] = useState("");
@@ -18,14 +18,86 @@ function LoginAdm(): JSX.Element {
         <View style={styles.container}>
             <Image style={styles.logo}
              resizeMode="contain"
-            source={require('../assets/images/capivara.png')}/>
+            source={require('../assets/images/cliente.png')}/>
         
         <View style={styles.card}>
-            <Text style={styles.title}>Login Adm</Text>
+            <Text style={styles.title}>Cadastro Cliente</Text>
 
             <TextInput
             style={styles.input}
+             placeholder="Nome"
+            placeholderTextColor={"#000000"} 
+            onChangeText={(textEmail)=> setEmail(textEmail)}
+            />
+            <TextInput
+            style={styles.input}
+             placeholder="Celular"
+            placeholderTextColor={"#000000"} 
+            onChangeText={(textEmail)=> setEmail(textEmail)}
+            />
+            <TextInput
+            style={styles.input}
              placeholder="E-mail"
+            placeholderTextColor={"#000000"} 
+            onChangeText={(textEmail)=> setEmail(textEmail)}
+            />
+            <TextInput
+            style={styles.input}
+             placeholder="CPF"
+            placeholderTextColor={"#000000"} 
+            onChangeText={(textEmail)=> setEmail(textEmail)}
+            />
+            <TextInput
+            style={styles.input}
+             placeholder="Data de Nascimento"
+            placeholderTextColor={"#000000"} 
+            onChangeText={(textEmail)=> setEmail(textEmail)}
+            />
+            <TextInput
+            style={styles.input}
+             placeholder="Cidade"
+            placeholderTextColor={"#000000"} 
+            onChangeText={(textEmail)=> setEmail(textEmail)}
+            />
+            <TextInput
+            style={styles.input}
+             placeholder="Estado"
+            placeholderTextColor={"#000000"} 
+            onChangeText={(textEmail)=> setEmail(textEmail)}
+            />
+            <TextInput
+            style={styles.input}
+             placeholder="País"
+            placeholderTextColor={"#000000"} 
+            onChangeText={(textEmail)=> setEmail(textEmail)}
+            />
+            <TextInput
+            style={styles.input}
+             placeholder="Rua"
+            placeholderTextColor={"#000000"} 
+            onChangeText={(textEmail)=> setEmail(textEmail)}
+            />
+            <TextInput
+            style={styles.input}
+             placeholder="Numero"
+            placeholderTextColor={"#000000"} 
+            onChangeText={(textEmail)=> setEmail(textEmail)}
+            />
+            <TextInput
+            style={styles.input}
+             placeholder="Bairro"
+            placeholderTextColor={"#000000"} 
+            onChangeText={(textEmail)=> setEmail(textEmail)}
+            />
+            <TextInput
+            style={styles.input}
+             placeholder="CEP"
+            placeholderTextColor={"#000000"} 
+            onChangeText={(textEmail)=> setEmail(textEmail)}
+            />
+            <TextInput
+            style={styles.input}
+             placeholder="Complemento"
             placeholderTextColor={"#000000"} 
             onChangeText={(textEmail)=> setEmail(textEmail)}
             />
@@ -119,4 +191,4 @@ const styles = StyleSheet.create({
     }
 })
 
-export default LoginAdm;
+export default CadastroCliente;
